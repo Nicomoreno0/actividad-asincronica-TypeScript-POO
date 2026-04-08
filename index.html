@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saludo</title>
+</head>
+<body>
+  <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+  <button onclick="saludar()">Saludar</button>
+  <p id="saludo"></p>
+
+  <script>
+    function saludar() {
+      const nombre = document.getElementById("nombre").value;
+      document.getElementById("saludo").textContent = "¡Hola, " + nombre + "!";
+    }
+  </script>
+</body>
+</html>
